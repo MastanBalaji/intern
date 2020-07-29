@@ -81,7 +81,7 @@
                         <h4>Passing Year is required</h4>
                     </mat-error>
                     <mat-error *ngIf="signup.get('passing').hasError('pattern')">
-                        <h4>eg- 2017 (Numbers only)</h4>
+                        <h4>eg- 2018 (Numbers only and greater than 2017)</h4>
                     </mat-error>
                     <mat-error
                         *ngIf="signup.get('passing').hasError('minlength') && !signup.get('passing').hasError('pattern')">

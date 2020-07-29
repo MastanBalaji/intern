@@ -34,9 +34,9 @@ export class SignupComponent implements OnInit {
     if(a <= 2017){
       this.snackbar.open('Passing year should be greater than 2017', 'error', {
         duration: 2000,
-        verticalPosition: 'top'
+        verticalPosition: 'bottom'
       });
-      this.signup.patchValue({passing:''})
+      this.signup.patchValue({passing:'---'})
       return false;
     }
     else{
