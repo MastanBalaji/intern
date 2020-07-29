@@ -1,0 +1,27 @@
+<h1 class="txt-shd clr mt-4 hdr-sty text-center">
+    Student Details
+</h1>
+<div class="dot"></div>
+<div class="d-flex justify-content-center align-content-center">
+    <table class="table mt-5 table-bordered table-hover table-striped w-75 pointer">
+        <thead>
+            <tr>
+                <th colspan="4"><b>Student Result Board</b></th>
+            </tr>
+            <tr>
+                <th><b><i>Student Name</i></b></th>
+                <th><b><i>Roll Number</i></b></th>
+                <th><b><i>Total Marks</i></b></th>
+                <th><b><i>Status</i></b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let student of studentlist' [class.topper]='student?.status == "Topper"' [class.fail]='student?.status == "Fail"'>
+                <td>{{student?.name | titlecase}}</td>
+                <td>{{student?.rollNumber}}</td>
+                <td class="text-right">{{student?.total}}</td>
+                <td>{{student?.status}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

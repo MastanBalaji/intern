@@ -1,0 +1,25 @@
+.hdr-sty{
+    font-family: Roboto;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .dot{
+    border: 1.5px solid #343a40;
+    width:7%;
+    margin:5px auto;
+}
+.txt-shd{
+    text-shadow: 0rem 0rem 0.3rem #e9d950;
+}
+.clr{
+    color: #343a40;
+}
+.topper{
+    color:green !important;
+}
+.fail{
+    color: red !important;
+}
+.pointer{
+    cursor: pointer;
+}
